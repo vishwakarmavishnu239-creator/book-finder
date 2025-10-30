@@ -4,25 +4,41 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#2563eb" />
-    <meta
-      name="description"
-      content="Book Finder - Search and discover books by title, author, or subject. Built for Aganitha take-home challenge."
-    />
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Book Finder - Discover Your Next Great Read" />
-    <meta property="og:description" content="Search millions of books by title, author, or subject" />
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:title" content="Book Finder - Discover Your Next Great Read" />
-    <meta property="twitter:description" content="Search millions of books by title, author, or subject" />
-    
-    <title>Book Finder - Search Books by Title, Author & Subject</title>
-    
-    <!-- Favicon -->
+    <meta name="description" content="Book Finder - Search and discover books by title, author, or subject" />
+    <title>Book Finder - Search Books</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
+    
+    <!-- Tailwind CSS CDN - CRITICAL FOR STYLING -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Configuration -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            animation: {
+              'spin': 'spin 1s linear infinite',
+            }
+          }
+        }
+      }
+    </script>
+    
+    <!-- Additional Styles -->
+    <style>
+      .line-clamp-1 {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+      }
+      .line-clamp-2 {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+      }
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
